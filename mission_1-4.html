@@ -1,0 +1,13 @@
+<html>
+<head>
+<meta charset="UTF-8">   <!-「UTF-8で書かれている」とブラウザに伝える(html用)->
+</head>
+<body>
+  <!-入力フォーム（入力欄と送信ボタンのみ）をformタグで作成する。->
+<form method="POST" action="mission_1-4.php">
+<input type="text"name="comment"value="コメント">　　<!-name=""の中身は、$_POST['']の中身と同じになればいいので、特に指定は無い。->
+<input type="submit"value="送信">
+</form>
+
+</body>
+</html>

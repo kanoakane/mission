@@ -1,0 +1,25 @@
+<html>
+<head>	
+<meta charset="UTF-8">
+</head>
+<body>
+
+<form method="POST" action="mission_2-5.php">
+<input type="hidden" name="edit_number" value="<?php echo $hidden_editing; ?>"><br>  <!-編集したい投稿番号を表示する(あとでhiddenで隠し、ブラウザには表示され値いようにする。name属性は"editing"とは違うものにする)->
+名前<input type="text" name="name" value="<?php echo $editingname; ?>"><br>
+コメント<input type="text" name="comment" value="<?php echo $editingcomment; ?>"><br>
+パスワード<input type="text" name="password" value="<?php echo $editingpassword; ?>">
+<input type="submit" value="送信"><br>
+<br>
+削除機能<input type="text" name="numeral" placeholder="削除対象番号"><br>
+パスワード<input type="text" name="pw_numeral" placeholder="パスワード">
+<input type="submit" value="削除"><br>
+<br>
+編集機能<input type="text" name="editing" placeholder="編集対象番号"><br>
+パスワード<input type="text" name="pw_editing" placeholder="パスワード">
+<input type="submit" value="編集" >
+</form>
+
+
+</body>
+</html>
